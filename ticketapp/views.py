@@ -13,7 +13,7 @@ def ticketform_view(request):
     headers = {'orgId':'orgId','Authorization': 'Zoho-oauthtoken'}
     if request.method=="GET":
         form=TicketForm()
-        return render(request,'test.html',{'form':form})
+        return render(request,'create_ticket_form.html',{'form':form})
     if request.method=="POST":
         form=TicketForm(request.POST)
         if form.is_valid():
