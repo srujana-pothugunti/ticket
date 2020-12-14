@@ -12,7 +12,7 @@
   <component name="ChangeListManager">
     <list default="true" id="063250e7-042d-426a-bc44-53b16f4c861e" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ticket/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/ticket/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ticketapp/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/ticketapp/views.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

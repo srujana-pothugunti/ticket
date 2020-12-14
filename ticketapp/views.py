@@ -18,6 +18,12 @@ def ticketform_view(request):
         form=TicketForm(request.POST)
         if form.is_valid():
             print("form",form)
-            data=form.json()
-            response = requests.post('https://desk.zoho.com/api/v1/tickets', data=data, headers=headers)
+            data=form.data()
+            data['contact_id']={
+                'first_name': request.GET['first_name'],
+                'last_name': request.GET['last_name'],
+                'email': request.GET['email']
+            }
+            json_data=data.json()
+            response = requests.post('https://desk.zoho.com/api/v1/tickets', data=json_data, headers=headers)
             return HttpResponse("Form Submitted")
